@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pseudo-elements Example</title>
-    <link rel="stylesheet" type="text/css" href="yourstylesheet.css">
+    <title>Before and After Elements</title>
+    <style>
+        #container {
+            margin: 20px;
+            font-size: 16px;
+        }
+        #container::before {
+            content: "Before Element";
+            color: #f00;
+            font-size: 20px;
+        }
+        #container::after {
+            content: "After Element";
+            color: #f00;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div id="container">Main content of the container</div>
+    <div id="container">This is the main container element</div>
 </body>
 </html>
