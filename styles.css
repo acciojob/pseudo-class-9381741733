@@ -8,7 +8,7 @@
 }
 
 #container::before {
-    content: "before";
+    content: "Special text before the container";
     display: block;
     color: #f00;
     font-size: 20px;
@@ -17,11 +17,10 @@
 }
 
 #container::after {
-    content: "after";
+    content: "Special text after the container";
     display: block;
     color: #f00;
     font-size: 20px;
     text-align: center;
     margin-top: 10px;
 }
-
