@@ -1,26 +1,23 @@
+/* Style for the #container element */
 #container {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    text-align: center;
-    position: relative;
+  margin: 20px;
+  position: relative; /* Ensures pseudo-elements align correctly */
 }
 
+/* Pseudo-element for content before the container */
 #container::before {
-    content: "Special text before the container";
-    display: block;
-    color: #f00;
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 10px;
+  content: "Special text before";
+  display: block; /* Ensures it appears on a new line above */
+  color: #f00;
+  font-size: 20px;
+  margin-bottom: 10px; /* Adds space below this pseudo-element */
 }
 
+/* Pseudo-element for content after the container */
 #container::after {
-    content: "Special text after the container";
-    display: block;
-    color: #f00;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 10px;
+  content: "Special text after";
+  display: block; /* Ensures it appears on a new line below */
+  color: #f00;
+  font-size: 20px;
+  margin-top: 10px; /* Adds space above this pseudo-element */
 }
